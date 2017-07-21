@@ -37,3 +37,6 @@ package-lock.json
 
 # Ignore upstream packs, this ain't like that
 packs-old
+
+# Ignore test
+test
