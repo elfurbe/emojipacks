@@ -1,0 +1,9 @@
+title: catbugs
+emojis:
+  - name: catbug_hearteyes
+  - name: catbug_science
+  - name: catbug_troll
+  - name: catbug_wiggle
+    aliases:
+      - catbutt
+  - name: catbug

@@ -1,20 +1,9 @@
 # emojipacks
-[![Build Status](https://travis-ci.org/lambtron/emojipacks.svg?branch=master)](https://travis-ci.org/lambtron/emojipacks)
 
 > CLI to bulk upload emojis to your Slack!
 
-## Install
-
-*Note you must have `node` and `npm` installed. If you don't, go to [nodejs.org](https://www.nodejs.org) and follow the install instructions there.*
-
 ```bash
-$ npm install -g emojipacks
-```
-
-or
-
-```bash
-$ git clone git@github.com:lambtron/emojipacks.git
+$ git clone https://github.com/elfurbe/emojipacks.git
 $ cd emojipacks
 $ make
 ```
@@ -90,6 +79,8 @@ emojis:
 
 ..with the `src` pointing to an image file. According to Slack:
 
+Note: in this fork, emojis stored in the `emojis` folder can omit the `src` propery if the `name` property matches `name.png` in the emojis folder. Use it, don't use it, up to you. The normal method of providing it in the yaml is still supported as before.
+
 - Square images work best
 - Image can't be larger than 128px in width or height
 - Image must be smaller than 64K in file size
@@ -105,56 +96,6 @@ emojis:
       - mergerequest
     src: https://i.imgur.com/rhwNxfc.png
 ```
-
-
-## Emoji packs
-
-- [animals](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/animals.yaml)
-- [clippy](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/clippy.yaml)
-- [fika](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/fika.yaml)
-- [frontend](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/frontend.yaml)
-- [harrypotter](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/harrypotterhouses.yaml)
-- [mario](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/mario-8bit.yaml)
-- [occupy](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/occupy.yaml)
-- [officespace](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/officespace.yaml)
-- [omnom](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/omnom.yaml)
-- [scrabble](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/scrabble.yaml)
-- [futurama](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/futurama.yaml)
-- [food](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/food.yaml)
-- [skype](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/skype.yaml)
-- [starwars](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/starwars.yaml)
-- [startups](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/startups.yaml)
-- [businessfish](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/businessfish.yaml)
-- [hipchat](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/hipchat.yaml)
-- [twitch](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/twitch.yaml)
-- [Slackmojis](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/slackmojis.yaml)
-- [parrotparty](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/parrotparty.yaml) ([Parrot](http://cultofthepartyparrot.com/) [Paint](http://cultofthepartyparrot.com/paint/))
-- [Finland](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/finland.yaml)
-- [pokemongo: items](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/pokemongo.yaml)
-- [Pokémon Go: Pokémon](https://raw.githubusercontent.com/Templarian/slack-emoji-pokemon/master/pokemon.yaml) ([Prefixed `pokemon-*`](https://raw.githubusercontent.com/Templarian/slack-emoji-pokemon/master/pokemon-prefix.yaml))
-- [politipack](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/politipack.yaml)
-- [nekoatsume](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/nekoatsume.yaml)
-- [octicons](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/octicons.yaml)
-- [pokemon](https://raw.githubusercontent.com/jaylynch/pokemoji/master/pokemon-by-name.yaml)
-- [devicon](https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/devicon.yaml) ([Devicon](http://devicon.fr/))
-- [hamsterdance](https://raw.githubusercontent.com/snipe/hamsterdance-emojipack/master/hamsterdance.yaml) ([snipe/emojipacks](https://github.com/snipe/hamsterdance-emojipack))
-- [avengers](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/avengers.yml)
-- [Shiba Stickers](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/shiba.yaml) (from Messenger)
-- [gamedevmoji](https://raw.githubusercontent.com/niksudan/gamedevmoji/master/gamedevicons.yaml)
-- [AWS simple icons](https://raw.githubusercontent.com/Surgo/aws_emojipacks/master/noprefix-emojipacks.yml)
-
-![](http://media1.giphy.com/media/68H7QjnqFOn2E/100.gif)
-
-Want to contribute? [Suggest an emoji pack](https://20p.typeform.com/to/xOFDyq)!
-
-## Troubleshooting
-
-This script will essentially log into your Slack and then submit a `POST` request on the emoji upload form page. If you are seeing errors, make sure that:
-- **you have Slack privileges to add custom emojis**: otherwise, the script won't be able to get to the emoji upload form
-- **you disabled two-factor authentication**: again, having two-factor enabled will prevent the script from getting to the necessary emoji upload form
-- **your credentials are correct**: if you have done all of the following correctly try running the command **emojipacks -d**
-
-*Still having issues? Create an issue [here](https://github.com/lambtron/emojipacks/issues/new).*
 
 *Enjoyed this project? Check out my [blog](http://blog.andyjiang.com) for more*.
 
