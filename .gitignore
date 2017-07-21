@@ -34,3 +34,6 @@ batchUpload.sh
 
 # Ignore package lock file
 package-lock.json
+
+# Ignore upstream packs, this ain't like that
+packs-old
