@@ -25,7 +25,10 @@ program
 
 co(function *() {
   var user = yield Prompt.start(program.subdomain, program.email, program.password, program.pack);
-  var pack = yield Pack.get(user.pack);
+  if (user.pack.indexOf(".yaml") != -1 || user.pack.indexOf(".yml") != -1)
+    var pack = yield Pack.get(user.pack);
+  else
+    var pack = yield Pack.get(user.pack+".yaml");
   pack = clean(pack);
   user.emojis = pack.emojis;
   var slack = new Slack(user, program.debug);

@@ -40,3 +40,6 @@ packs-old
 
 # Ignore test
 test
+
+# Ignore vim swp files
+*.swp
