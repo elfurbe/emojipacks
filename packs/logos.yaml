@@ -1,0 +1,60 @@
+title: logos
+emojis:
+  - name: inemojifolder
+  - name: adobecc
+  - name: android
+  - name: appleinc
+  - name: arbys
+  - name: arielbucks
+  - name: bofh
+  - name: captain
+  - name: dcplusplus
+    aliases:
+      - dcpp
+  - name: doom
+  - name: dts
+  - name: emacs
+  - name: etc
+  - name: excite
+  - name: facebook
+  - name: foxnews
+    aliases:
+      - fairandbalanced
+  - name: google
+  - name: googlewave
+  - name: idlogo
+    aliases:
+      - id
+  - name: idtech
+  - name: ie
+  - name: illuminati
+  - name: kaf
+  - name: mackie
+  - name: makersmark
+  - name: ncsa
+  - name: netscape
+  - name: npr
+  - name: nsa
+  - name: nwa
+  - name: ohyeah
+  - name: oldstarbucks
+  - name: onion
+  - name: pbs
+  - name: playstation
+  - name: qt
+  - name: raspberrypi
+  - name: ratm
+  - name: rtcw
+  - name: smoothtaste
+  - name: spam
+  - name: starbucks
+  - name: subie
+  - name: tarjay
+  - name: ubuntu
+  - name: vim
+  - name: whataburger
+  - name: win10
+  - name: win95
+  - name: windows
+  - name: wolfenstein
+  - name: xbox

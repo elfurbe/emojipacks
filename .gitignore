@@ -43,3 +43,6 @@ test
 
 # Ignore vim swp files
 *.swp
+
+# Ignore .DS_Store
+.DS_Store

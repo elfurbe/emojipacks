@@ -1,0 +1,8 @@
+title: template
+emojis:
+  - name: inemojifolder
+  - name: notinfolder
+    src: http://a.website.here/dankemoji.png
+  - name: thishasaliases
+    aliases:
+      - onealias
