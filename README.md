@@ -97,8 +97,6 @@ emojis:
     src: https://i.imgur.com/rhwNxfc.png
 ```
 
-*Enjoyed this project? Check out my [blog](http://blog.andyjiang.com) for more*.
-
 ## License (MIT)
 
 ```
